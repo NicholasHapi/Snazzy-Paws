@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snazzy Paws Grooming | Booking</title>
+  <link rel="stylesheet" href="style.min.css">
+
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 class="site-title">Snazzy Paws Grooming</h1>
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" aria-labelledby="booking-hero">
+     <img src="images/banner.jpg" alt="Smiling groomed dog on grooming table" class="hero-img" />
+    <div class="hero-overlay">
+      <h2 id="booking-hero">Book a Grooming Appointment</h2>
+    </div>
+  </section>
+
+  <main class="container" role="main">
+    <section class="card booking-card" aria-labelledby="booking-heading">
+      <h3 id="booking-heading">Booking Form</h3>
+
+      <form aria-label="Booking form" class="form-stack" novalidate>
+        <label for="owner">Owner's Name</label>
+        <input id="owner" name="owner" type="text" required />
+
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="dogname">Dog's Name</label>
+        <input id="dogname" name="dogname" type="text" required />
+
+        <label for="breed">Breed</label>
+        <input id="breed" name="breed" type="text" />
+
+        <label for="age">Age (years)</label>
+        <input id="age" name="age" type="number" min="0" />
+
+        <label for="date">Preferred Date</label>
+        <input id="date" name="date" type="date" required />
+
+        <label for="time">Preferred Time</label>
+        <input id="time" name="time" type="time" required />
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p><strong>Opening Hours:</strong> Mon - Sat, 9am - 6pm</p>
+    </div>
+  </footer>
+</body>
+</html>
